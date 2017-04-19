@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+      <meta content='yes' name='apple-mobile-web-app-capable'>
+      <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+      <meta content='black' name='apple-mobile-web-app-status-bar-style'>
+      <link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+      <title>Designing a RubyMotion iOS App - Full Stack Ruby on Rails Developer | moviendo.me</title>
+    </meta>
+  </head>
+  <body class='notes notes_designing-a-rubymotion-ios-app'>
+    <div class='page-wrapper'>
+      <section class='blog-5'>
+        <div class='title'>
+          <div class='container'>
+            <h3>Designing a RubyMotion iOS App</h3>
+            <div class='submitted'>
+              <span>
+                <i class='fa fa-calendar'></i>
+                Nov 29 2014
+              </span>
+              <span>
+                <i class='fa fa-tag'></i>
+                ios development
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <br>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-sm-8 col-sm-offset-2'>
+              <p>As I said in my previous post, <a href="/my-first-rubymotion-app-for-ios">My first RubyMotion app for iOS</a>,
+              I decided to do a simple application to know how much I everyday spend
+              in coffee, buying food, dinning out, taxi, etc.</p>
+              
+              <p>It&#39;s my first <a href="http://www.rubymotion.com/">RubyMotion</a> application so I
+              plan to code only essential features to write not many code. I want to mantain updated the app and
+              I want to refactor without many efforts to improve the code with new stuff I learn.</p>
+              
+              <p>Besides, if I want to use the application everyday it has to be useful and easy
+              to use. The idea is simple: I know how much I pay every month in rent or
+              energy but I don&#39;t know how many times I lunch out of the office and how much I spend.</p>
+              
+              <h2>Definition of Home Screen</h2>
+              
+              <p>This is the screen that I&#39;ll watch everytime I open the app so it must
+              contains useful information and buttons to do most used actions.</p>
+              
+              <h4>Navigation Bar</h4>
+              
+              <ul>
+              <li>Left, typical icon to slide a menu with more options</li>
+              <li>Right, plus icon to create a new spend</li>
+              </ul>
+              
+              <h4>Body</h4>
+              
+              <ul>
+              <li>Big total day</li>
+              <li>Total week</li>
+              <li>Total month</li>
+              <li>Customizable value</li>
+              <li>List of last spends</li>
+              </ul>
+              
+              <h2>Prototyping in paper</h2>
+              
+              <p>Before get the pencil I did a lot of research in App Store and
+              <a href="http://www.pttrns.com/">Pttrns</a> website to look for inspiration, colors, ui, ux and simply and
+              clever apps.</p>
+              
+              <p>In previous sketchs I made I put my mobile up papel and round it
+              with a pencil but this time I&#39;ve used a cool tool, courtesy of <a href="http://www.uistencils.com/">UI Stencils</a>.
+              It helps me to draw faster and better my sketchs. It&#39;s really useful!</p>
+              
+              <p><img alt="uistencil photo" src="/stuff/notes/images/iphone-ui-stencil.jpg" /></p>
+              
+              <p><img alt="Sketching at Starbucks" src="/stuff/notes/images/sketching-an-ios-app-at-starbucks.jpg" /></p>
+              
+              <h2>Prototyping in Sketch 3</h2>
+              
+              <p>Finished prototype in paper next step it&#39;s to design it in <a href="http://bohemiancoding.com/sketch/">Sketch
+              3</a> an application that surprised me in a good way.
+              It&#39;s that I need to prototype and design iOS apps, websites, etc. It
+              has cool features like <em>@2x</em> export option.</p>
+              
+              <p>It includes templates to do iOS App icons or iOS UI Designs. Also, there&#39;s a
+              lot of resources and plugins at <a href="http://www.sketchappsources.com/">Sketch App
+              Sources</a>.</p>
+              
+              <p>Morever,
+              there is a iOS app called
+              <a href="http://www.bohemiancoding.com/sketch/features/#mirror">Sketch Mirror</a> that allows you to preview your
+              design live in your device connecting it to your computer and clicking
+              in <strong>Mirror</strong> button in <a href="http://bohemiancoding.com/sketch/">Sketch
+              3</a>.</p>
+              
+              <p><img alt="sketch 3 ios ui design template" src="/stuff/notes/images/sketch-3-ios-ui-design-screenshot.jpg" /></p>
+              
+              <p>Finally and after work for a while this is like Home Screen looks. You
+              can download the design from <a href="/stuff/notes/images/HomeScreen.sketch">Home Screen Sketch file</a>. Also, you can download
+              the iPhone design from
+              <a href="http://www.sketchappsources.com/free-source/789-iphone6-sketch-freebie-resource.html">iPhone 6 Sketch file</a>.</p>
+              
+              <p><img alt="Everyday ios app" src="/stuff/notes/images/everyday-iphone.gif" /></p>
+              
+              <p>Next step is code it!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class='content-12'>
+      <a class='wide btn-wide' href='#'>
+        <b>I love building projects</b>
+        and learning new technologies
+      </a>
+    </section>
+    <a name='stuff'></a>
+    <section class='content-26'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-sm-8 col-sm-offset-2'>
+            <h3>Some stuff</h3>
+            <p class='lead'>I use to write about what I learn, my work &amp; travels</p>
+          </div>
+        </div>
+        <div class='row features'>
+          <div class='col-sm-3'>
+            <img alt='' height='100' src='/images/stuff/Book@2x.png' width='100'>
+              <h6>About this Website</h6>
+              Why Middleman is a great choice to build Static Sites
+            </img>
+            <br>
+            <br>
+            <a class='btn btn-default' disabled='disabled'>
+              Comming soon
+            </a>
+          </div>
+          <div class='col-sm-4 col-sm-offset-1'>
+            <img alt='' height='100' src='/images/stuff/Responsive1@2x.png' width='100'>
+              <h6>Development notes</h6>
+              Things that I learn about development
+              <br>
+              and works for me
+            </img>
+            <br>
+            <br>
+            <a class='btn btn-default' href='/notes.html'>
+              Read more
+            </a>
+          </div>
+          <div class='col-sm-3 col-sm-offset-1'>
+            <img alt='' height='100' src='/images/stuff/Trip-Bag@2x.png' width='70'>
+              <h6>Travel</h6>
+              Tips &amp; pictures of some beautiful places I visited in last years
+            </img>
+            <br>
+            <br>
+            <a class='btn btn-default' disabled='disabled'>
+              Comming soon
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a name='about'></a>
+    <section class='content-27 bg-clouds'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-sm-4'>
+          </div>
+          <div class='col-sm-7 col-sm-offset-1'>
+            <h3>Hi! I'm José Ferrer</h3>
+            <p>
+              I'm a Full Stack developer that really enjoy building projects and learning
+              new technologies. I mainly work with
+              <strong>Ruby on Rails</strong>
+              framework for back-end development
+              but my skills with front-end are strong.
+            </p>
+            <p>
+              Now, I'm working fulltime for
+              <a href='http://www.inspiringbenefits.com/'>Inspiring Benefits</a>
+              developing new products, upgrading some projects to the current Rails version and optimizing our web servers and deployments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class='footer-2 bg-midnight-blue'>
+      <div class='container'>
+        <nav class='pull-left'>
+          <ul>
+            <li class='active'>
+              <a href='/#home'>Home</a>
+            </li>
+            <li>
+              <a href='/#skills'>Skills</a>
+            </li>
+            <li>
+              <a href='/#stuff'>Stuff</a>
+            </li>
+            <li>
+              <a href='/#hackerparadise'>Hacker Paradise</a>
+            </li>
+            <li>
+              <a href='/#about'>About</a>
+            </li>
+          </ul>
+        </nav>
+        <div class='social-btns pull-right'>
+          <a href='http://twitter.com/joseferrer'>
+            <i class='fa fa-twitter'></i>
+          </a>
+          <a href='https://github.com/jferrer'>
+            <i class='fa fa-github'></i>
+          </a>
+          <a href='https://es.linkedin.com/in/moviendome'>
+            <i class='fa fa-linkedin'></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </body>
+</html>

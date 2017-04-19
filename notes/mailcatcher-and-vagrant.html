@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+      <meta content='yes' name='apple-mobile-web-app-capable'>
+      <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+      <meta content='black' name='apple-mobile-web-app-status-bar-style'>
+      <link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+      <title>Mailcatcher and Vagrant - Full Stack Ruby on Rails Developer | moviendo.me</title>
+    </meta>
+  </head>
+  <body class='notes notes_mailcatcher-and-vagrant'>
+    <div class='page-wrapper'>
+      <section class='blog-5'>
+        <div class='title'>
+          <div class='container'>
+            <h3>Mailcatcher and Vagrant</h3>
+            <div class='submitted'>
+              <span>
+                <i class='fa fa-calendar'></i>
+                Jul 30 2014
+              </span>
+              <span>
+                <i class='fa fa-tag'></i>
+                development
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <br>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-sm-8 col-sm-offset-2'>
+              <p>If tying to run <a title="Go to MailCatcherwebsite" href="http://mailcatcher.me/">MailCatcher</a>
+              on a VM managed by Vagrant you get the following error:</p>
+              
+              <p><code>
+              No data received. Unable to load the webpage because the server sent no data...
+              </code></p>
+              
+              <p>To solve this issue, kill your proccess and run:</p>
+              
+              <p><code>
+              $ mailcatcher --ip=0.0.0.0
+              </code></p>
+              
+              <p>Now you can access <a title="Go to MailCatcherwebsite" href="http://mailcatcher.me/">MailCatcher</a>
+              on your VM host using your VM&#39;s IP and port 1080.  This way, Vagrant port forwarding isn&#39;t required.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class='content-12'>
+      <a class='wide btn-wide' href='#'>
+        <b>I love building projects</b>
+        and learning new technologies
+      </a>
+    </section>
+    <a name='stuff'></a>
+    <section class='content-26'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-sm-8 col-sm-offset-2'>
+            <h3>Some stuff</h3>
+            <p class='lead'>I use to write about what I learn, my work &amp; travels</p>
+          </div>
+        </div>
+        <div class='row features'>
+          <div class='col-sm-3'>
+            <img alt='' height='100' src='/images/stuff/Book@2x.png' width='100'>
+              <h6>About this Website</h6>
+              Why Middleman is a great choice to build Static Sites
+            </img>
+            <br>
+            <br>
+            <a class='btn btn-default' disabled='disabled'>
+              Comming soon
+            </a>
+          </div>
+          <div class='col-sm-4 col-sm-offset-1'>
+            <img alt='' height='100' src='/images/stuff/Responsive1@2x.png' width='100'>
+              <h6>Development notes</h6>
+              Things that I learn about development
+              <br>
+              and works for me
+            </img>
+            <br>
+            <br>
+            <a class='btn btn-default' href='/notes.html'>
+              Read more
+            </a>
+          </div>
+          <div class='col-sm-3 col-sm-offset-1'>
+            <img alt='' height='100' src='/images/stuff/Trip-Bag@2x.png' width='70'>
+              <h6>Travel</h6>
+              Tips &amp; pictures of some beautiful places I visited in last years
+            </img>
+            <br>
+            <br>
+            <a class='btn btn-default' disabled='disabled'>
+              Comming soon
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a name='about'></a>
+    <section class='content-27 bg-clouds'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-sm-4'>
+          </div>
+          <div class='col-sm-7 col-sm-offset-1'>
+            <h3>Hi! I'm José Ferrer</h3>
+            <p>
+              I'm a Full Stack developer that really enjoy building projects and learning
+              new technologies. I mainly work with
+              <strong>Ruby on Rails</strong>
+              framework for back-end development
+              but my skills with front-end are strong.
+            </p>
+            <p>
+              Now, I'm working fulltime for
+              <a href='http://www.inspiringbenefits.com/'>Inspiring Benefits</a>
+              developing new products, upgrading some projects to the current Rails version and optimizing our web servers and deployments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class='footer-2 bg-midnight-blue'>
+      <div class='container'>
+        <nav class='pull-left'>
+          <ul>
+            <li class='active'>
+              <a href='/#home'>Home</a>
+            </li>
+            <li>
+              <a href='/#skills'>Skills</a>
+            </li>
+            <li>
+              <a href='/#stuff'>Stuff</a>
+            </li>
+            <li>
+              <a href='/#hackerparadise'>Hacker Paradise</a>
+            </li>
+            <li>
+              <a href='/#about'>About</a>
+            </li>
+          </ul>
+        </nav>
+        <div class='social-btns pull-right'>
+          <a href='http://twitter.com/joseferrer'>
+            <i class='fa fa-twitter'></i>
+          </a>
+          <a href='https://github.com/jferrer'>
+            <i class='fa fa-github'></i>
+          </a>
+          <a href='https://es.linkedin.com/in/moviendome'>
+            <i class='fa fa-linkedin'></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </body>
+</html>
